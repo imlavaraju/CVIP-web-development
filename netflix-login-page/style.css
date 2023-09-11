@@ -12,6 +12,7 @@
     background-image:  url("images/background-img.jpg");
     font-family: 'Roboto' , sans-serif;
     height: 100%;
+    margin-left:10px;
     
     
 }
@@ -216,6 +217,6 @@ option value{
 }
 body{
     overflow-x:hidden;
-    overflow-y:hidden;
+   
     
 }
