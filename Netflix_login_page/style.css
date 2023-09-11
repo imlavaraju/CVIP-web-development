@@ -9,7 +9,7 @@
 }
 
 .backimage {
-    background-image:  url('Netflix_login_page/images/background-img.jpg');
+    background-image:  url("../images/background-img.jpg");
     font-family: 'Roboto' , sans-serif;
     height: 100%;
     
