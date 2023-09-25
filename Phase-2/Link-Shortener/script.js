@@ -23,5 +23,7 @@ copyButton.onclick = ()=>{
     newURL.select();
 
     window.navigator.clipboard.writeText(newURL.value);
+    document.getElementById("followme").textContent = "made by imlavaraju";
+    document.getElementById("followme").style.color="green";
 }
 }
