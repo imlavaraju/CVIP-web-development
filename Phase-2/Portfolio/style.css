@@ -648,3 +648,6 @@ footer p {
   position: relative;
   bottom: -10px;
 }
+#more {
+  display: none;
+}

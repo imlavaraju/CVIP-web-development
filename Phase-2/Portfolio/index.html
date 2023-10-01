@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="C:\Users\Lavaraj\Desktop\pythonbabu\Portfolio\style.css" />
 
   </head>
   <body>
@@ -77,14 +77,26 @@
       <h1 class="title">About Me</h1>
       <div class="text-container">
         <p>
-          Hello ,I'm Gorli Lavaraju, a dedicated mechanical engineer who has embarked on an exciting journey into the world of web development. My educational background in mechanical engineering has equipped me with a strong foundation in problem-solving, critical thinking, and attention to detail.</p></br><p>
+          Hello ,I'm Gorli Lavaraju, a dedicated mechanical engineer who has embarked on an exciting journey into the world of web development.
+           My educational background in mechanical engineering has equipped me with a strong foundation in problem-solving, critical thinking, and attention to detail.
+          </p></br>
+            <p>
+           
+            <span id="dots"></span> <span id="more">
+              Driven by an insatiable curiosity for technology, I recently completed an intensive front-end web development course,
+               where I honed my skills in HTML, CSS, and JavaScript. This immersive experience ignited my passion for 
+               crafting captivating and user-friendly digital experiences.</br></br>
+              
+              
+              But my journey doesn't stop here. I'm now venturing into the intricate realm of backend development,
+               eager to explore the complexities of databases, server-side scripting, and the architecture that powers the web.
+                My goal is to become a versatile full-stack developer capable of turning ideas into fully functional web applications.</br></br>
 
-Driven by an insatiable curiosity for technology, I recently completed an intensive front-end web development course, where I honed my skills in HTML, CSS, and JavaScript. This immersive experience ignited my passion for crafting captivating and user-friendly digital experiences.</p></br><p>
+              Throughout this evolving journey, I'm committed to continuous learning, embracing challenges, and pushing the boundaries of my knowledge.
+               My engineering background and newfound coding skills are a unique blend that enables me to approach web development with precision and creativity.</br>
+              For any queries contact me</br></br></span></p>
 
-But my journey doesn't stop here. I'm now venturing into the intricate realm of backend development, eager to explore the complexities of databases, server-side scripting, and the architecture that powers the web. My goal is to become a versatile full-stack developer capable of turning ideas into fully functional web applications.</p></br><p>
-
-Throughout this evolving journey, I'm committed to continuous learning, embracing challenges, and pushing the boundaries of my knowledge. My engineering background and newfound coding skills are a unique blend that enables me to approach web development with precision and creativity.</p></br>
-<p>For any queries contact me</p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
 
       </div>
       <section id="education">
@@ -288,6 +300,24 @@ Throughout this evolving journey, I'm committed to continuous learning, embracin
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+
+
+  /*read more*/
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
     </script>
   </body>
 </html>
